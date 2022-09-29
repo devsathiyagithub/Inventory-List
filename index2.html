@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var product = [];
+
+        function add(e) {
+            product.push(e)
+        }
+        function getList() {
+            document.write(product)
+        }
+        function remove(e) {
+            for (var i = 0; i < product.length; i++) {
+                if (product[i] === e) {
+                    var spliced = product.splice(i, 1);
+                }
+            }
+        }
+        add('kathir')
+        add('laishu')
+        add('priya')
+        add('katsdshir')
+        add('laiswwhu')
+        add('priyeeeea')
+        remove("priya")
+        getList()
+
+    </script>
+</body>
+
+</html>
